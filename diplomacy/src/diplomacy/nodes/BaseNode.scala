@@ -296,7 +296,7 @@ trait OutwardNode[DO, UO, BO <: Data] extends BaseNode {
   /** Accumulates output connections. */
   private val accPO = ListBuffer[(Int, InwardNode[DO, UO, BO], NodeBinding, Parameters, SourceInfo)]()
 
-  /** Initially set to `true`, this is set to false once [[oBindings]] is referenced. */
+  /** Initially set to `false`, set to `true` once [[oBindings]] is referenced. */
   private var oRealized = false
 
   /** @return debug information of [[oBindings]]. */

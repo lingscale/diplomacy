@@ -6,7 +6,7 @@ import org.chipsalliance.diplomacy.ValName
 
 /** A node which represents a node in the graph which has only inward edges, no outward edges.
   *
-  * A [[SinkNode]] cannot appear cannot appear right of a `:=`, `:*=`, `:=*`, or `:*=*`
+  * A [[SinkNode]] cannot appear right of a `:=`, `:*=`, `:=*`, or `:*=*`
   *
   * There are no "Mixed" [[SinkNode]]s because each one only has an inward side.
   */

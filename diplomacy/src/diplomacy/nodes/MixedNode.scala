@@ -651,7 +651,7 @@ abstract class MixedNode[DI, UI, EI, BI <: Data, DO, UO, EO, BO <: Data](
     x.iPush(o, y, binding)
   }
 
-  /* Metadata for printing the node graph. */
+  /** Metadata for printing the node graph. */
   def inputs: Seq[(OutwardNode[DI, UI, BI], RenderedEdge)] = (iPorts.zip(edgesIn)).map { case ((_, n, p, _), e) =>
     val re = inner.render(e)
     (n, re.copy(flipped = re.flipped != p(RenderFlipped)))

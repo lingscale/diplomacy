@@ -435,7 +435,7 @@ abstract class MixedNode[DI, UI, EI, BI <: Data, DO, UO, EO, BO <: Data](
       (start until end).map { j => (j, n, p, s) }
     }
 
-  // Ephemeral nodes ( which have non-None iForward/oForward) have in_degree = out_degree
+  // Ephemeral nodes (which have non-None iForward/oForward) have in_degree = out_degree
   // Thus, there must exist an Eulerian path and the below algorithms terminate
   @scala.annotation.tailrec
   private def oTrace(

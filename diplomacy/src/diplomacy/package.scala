@@ -55,7 +55,7 @@ import scala.language.implicitConversions
   *
   * Therefore, a given edge is always described as inward to one node and as outward from another.
   *
-  * Upward/downward refer to the direction of the overall directed acyclic graph. Because each each edge is directed, we
+  * Upward/downward refer to the direction of the overall directed acyclic graph. Because each edge is directed, we
   * say that the directions flow from sources (nodes that only have outward edges) downwards to sinks (nodes that only
   * have inward edges), or from sinks upwards to sources. These terms are used in parameter negotiation, where
   * parameters flow both upwards and downwards on edges. Note that diplomacy avoids terms like "master/slave",

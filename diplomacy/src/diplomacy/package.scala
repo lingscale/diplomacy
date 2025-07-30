@@ -66,7 +66,7 @@ import scala.language.implicitConversions
   *   - Downward refers to a flow of parameters along edges in the downwards direction.
   *
   * A useful mnemonic for distinguishing between upward and downward is to imagine a diplomatic graph as a literal
-  * network of rivers where water flows in the direction of the edges, and parameters that move in the upstream
+  * network of rivers where water flows in the direction of the edges, and upward refers to parameters that move in the upstream
   * direction, while downward refers to parameters that move in the downstream direction.
   *
   * ==Acronyms==
